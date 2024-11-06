@@ -17,3 +17,23 @@ while contador >= 10
 end
 puts "Terminei de contar"
 
+_________________________________________________________________________
+Outra estrutura de repetição , repetindo 5 vezes e imprimindo o valor maior
+cont = 1
+soma = 0
+maior = -Float::INFINITY
+
+while cont <= 5 do
+  print "Digite o #{cont}º valor: "
+  n = gets.to_i
+  
+  if n > maior
+    maior = n
+  end
+
+  soma += n
+  cont += 1
+end
+
+puts "A Soma de todos os valores foi #{soma}"
+puts "O Maior valor digitado foi #{maior}"
